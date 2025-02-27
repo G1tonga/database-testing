@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+/* Mobile Phones /Small Screens*/
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    grid-column: span 1;
+  }
+
+  .side-menu {
+    grid-column: span 1;
+    height: auto;
+  }
+  .content {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+  }
+  .content-item {
+    grid-column: span 1;
+    grid-row: minmax(200px, 5fr);
+  }
+}
+
+/* Desktops and Laptops */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .header {
+    grid-column: span 12;
+  }
+  .side-menu {
+    grid-column: span 2;
+  }
+  .content {
+    grid-column: span 10;
+  }
+}
+
+/* @media (min-width: 481px) and (max-width: 768px) {
+  .grid-container {
+  }
+  .content {
+  }
+} */

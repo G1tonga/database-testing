@@ -1,0 +1,38 @@
+/* Header Styles */
+.content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: 
+  "card1 card2 card3 card4";
+  
+}
+.header-items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 2rem;
+}
+.company-name {
+  margin-right: 3rem;
+  width: 100%;
+}
+.page-title {
+  margin-right: 25rem;
+  width: 100%;
+}
+.search-bar {
+  margin-right: 1rem;
+}
+.settings-icon {
+  margin-right: 1rem;
+}
+.notifications-icon {
+  margin-right: 1rem;
+}
+.avatar {
+  margin-right: 1rem;
+}
