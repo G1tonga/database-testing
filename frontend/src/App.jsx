@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_DATABASE_TESTING_BACKEND_URL;
+
 function App() {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:4000/api/delivery");
+    const response = await axios.get(`${API_URL}/`);
     setData(response.data);
     console.log(data);
   };
